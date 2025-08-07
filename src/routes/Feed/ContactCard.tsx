@@ -6,6 +6,7 @@ import {
   AiOutlineInstagram,
   AiOutlineMail,
 } from "react-icons/ai"
+import { CgWebsite } from "react-icons/cg";
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
 
@@ -18,12 +19,12 @@ const ContactCard: React.FC = () => {
       <StyledWrapper>
         {CONFIG.profile.github && (
           <a
-            href={`https://github.com/${CONFIG.profile.github}`}
+            href={`https://hoang-steel.vercel.app`}
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineGithub className="icon" />
-            <div className="name">github</div>
+            <CgWebsite className="icon" />
+            <div className="name">website</div>
           </a>
         )}
         {CONFIG.profile.instagram && (
